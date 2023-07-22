@@ -1,0 +1,6 @@
+/* Styles to center the container div */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
