@@ -34,7 +34,7 @@ const Colleges = () => {
     const [visibleColleges, setVisibleColleges] = useState(3); // Number of cards to show initially
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-service-server-pi.vercel.app/colleges')
             .then(res => res.json())
             .then(data => setColleges(data))
     }, []);
@@ -45,8 +45,8 @@ const Colleges = () => {
 
     return (
         <div>
-            <h2 className='text-3xl font-bold text-center mt-5'>Discover <span className='text-orange-500'>Colleges</span></h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            <h2 className='text-3xl font-bold text-center mt-10 mb-5'>Discover <span className='text-orange-500'>Colleges</span></h2>
+            <div className='grid grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-3'>
                 {colleges.slice(0, visibleColleges).map(college => (
                     <CollegeCard
                         key={college._id}

@@ -38,9 +38,10 @@
 
 import React from 'react';
 import './CollegeCard.css';
+import { Link } from 'react-router-dom';
 
 const CollegeCard = ({ college }) => {
-    const { image, name, admissionDates, events, researchHistory, sports } = college;
+    const { _id, image, name, admissionDates, events, researchHistory, sports } = college;
 
     return (
         <div className="card-container">
@@ -68,7 +69,9 @@ const CollegeCard = ({ college }) => {
                 </div>
                 <p className="research">Research: {researchHistory}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Details</button>
+                    <Link to={`/collges/${_id}`}>
+                        <button className="btn btn-primary">Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

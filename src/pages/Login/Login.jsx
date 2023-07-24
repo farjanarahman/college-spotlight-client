@@ -112,9 +112,10 @@ const LoginForm = () => {
                         </button>
                         <br />
                     </form>
+                    <p className='text-center mt-5'>or Login with</p>
                     <div className='flex items-center justify-center'>
                         <div className="flex justify-center">
-                            <button className="btn bg-red-500 hover:bg-red-600 mx-auto mt-5 mr-2" onClick={handleGoogleSignIn}>
+                            <button className="btn bg-red-500 hover:bg-red-600 mx-auto mt-3 mr-2" onClick={handleGoogleSignIn}>
                                 <FaGoogle className="text-center mx-auto" />
                             </button>
 
