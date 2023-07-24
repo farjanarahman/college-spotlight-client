@@ -1,4 +1,5 @@
-import CollegeCard from '../CollegeSection/CollegeCard';
+import CollegeCard from '../CollegeSection/CollegeCard/CollegeCard';
+import Colleges from '../CollegeSection/Colleges/Colleges';
 import Header from '../Header/Header';
 import './Home.css'
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
                 </div>
             </div>
             <Header></Header>
-            <CollegeCard></CollegeCard>
+            <Colleges></Colleges>
         </div>
     );
 };

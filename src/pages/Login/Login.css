@@ -1,0 +1,28 @@
+/* Custom CSS (e.g., in a separate CSS file or within a style tag) */
+
+/* Apply blurriness to the background image */
+.hero::before {
+    content: '';
+    background-image: inherit;
+    filter: blur(8px); /* Adjust the blur value as needed */
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  /* Add gradient overlay on top of the background image */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(21, 104, 221, 0.5), rgba(0, 0, 0, 0.8)); /* Adjust the gradient colors and opacity as needed */
+  }
+  

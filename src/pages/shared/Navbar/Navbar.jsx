@@ -114,9 +114,26 @@ const Navbar = () => {
                 </label>
 
                 {/* Profile picture */}
+                {/* {
+                    user?.photoURL ? <img style={{ width: '50px', marginRight: "15px", borderRadius: '50%' }} src={user.photoURL} alt="User profile picture" className="rounded-full" /> : <></>
+                } */}
+
                 {
-                    user?.photoURL ? <img style={{ width: '50px', marginRight: "15px", borderRadius: '50%' }} src={user.photoURL} alt="User profile picture" /> : <></>
+                    user?.photoURL ? (
+                        <img
+                            style={{
+                                width: '50px',
+                                height: '50px', // Set the height to be equal to the width
+                                marginRight: "15px",
+                                borderRadius: '50%',
+                            }}
+                            src={user.photoURL}
+                            alt="User profile picture"
+                            className="rounded-full"
+                        />
+                    ) : <></>
                 }
+
             </div>
         </div>
     );

@@ -1,0 +1,77 @@
+.card-container {
+    width: 320px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.college-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.admission-dates {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+.card-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.bullet-points {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.event,
+.sport {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.research {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #777;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

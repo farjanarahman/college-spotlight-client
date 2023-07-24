@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'login-image': "url('https://i.ibb.co/c8SKJZV/Education.jpg')",
+      })
+    },
   },
   plugins: [require("daisyui")],
 }
