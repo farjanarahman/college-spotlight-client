@@ -50,16 +50,12 @@ const Navbar = () => {
             <li className="font-semibold"><Link to="/">Home</Link></li>
 
             {user?.email ? <>
-                <li className="font-semibold"><Link to="/addToy">Add A Toy</Link></li>
-                <li className="font-semibold"><Link to="/toys">All Toys</Link></li>
-                <li className="font-semibold"><Link to="/mytoys">My Toys</Link></li>
-                <li className="font-semibold"><Link to='/blog'>Blogs</Link></li>
                 <li><button className="btn btn-info" onClick={handleLogout}>Log out</button></li>
             </>
                 : <>
-                    <li className="font-semibold"><Link to="/allToy">Colleges</Link></li>
-                    <li className="font-semibold"><Link to='/blog'>Admission</Link></li>
-                    <li className="font-semibold"><Link to='/blog'>My College</Link></li>
+                    <li className="font-semibold"><Link to="/colleges">Colleges</Link></li>
+                    <li className="font-semibold"><Link to='/admission'>Admission</Link></li>
+                    <li className="font-semibold"><Link to='/myCollege'>My College</Link></li>
                     <Link to='/login'>
                         <button className="btn btn-info flex justify-end">Login</button>
                     </Link>

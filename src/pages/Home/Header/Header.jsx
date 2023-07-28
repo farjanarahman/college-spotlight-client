@@ -39,7 +39,7 @@ const Header = () => {
                 <div className="image-overlay absolute top-0 left-0 w-full h-full flex items-center justify-center">
                     <div>
                         <h2 className="carousel-title font-extrabold text-4xl text-center">Welcome to <br /> <span className=' font-extrabold text-sky-500'>College</span><span className="text-orange-500">Spotlight</span></h2>
-                        <p className='mt-5 w-3/5 font-medium text-white text-center'>Sportify is a renowned sports academy dedicated to nurturing young talent and promoting sports excellence.</p>
+                        <p className='mt-5 w-3/5 font-medium text-white text-center'>Your go-to source for unbiased, data-driven insights on colleges and universities, helping you make informed decisions for your educational journey. Explore and discover the perfect fit for your future today.</p>
                     </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

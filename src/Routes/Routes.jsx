@@ -19,7 +19,7 @@ const router = createBrowserRouter([
           path: 'colleges/:id',
           element: <PrivateRoutes><singleCollege></singleCollege></PrivateRoutes>,
           loader: ({ params }) =>
-          fetch(``)
+          fetch(`https://college-service-server-pi.vercel.app/colleges/${params.id}`)
         },
         {
           path: '/login',

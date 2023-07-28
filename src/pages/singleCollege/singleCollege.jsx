@@ -1,11 +1,14 @@
-import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
-const singleCollege = () => {
+const SingleCollege = () => {
+    const college = useLoaderData();
+    console.log(college);
+    const {name} = college;
     return (
         <div>
-            <h1>This is a college</h1>
+            <h1 className='text-3xl text-center'>Name of the college is: {name}</h1>
         </div>
     );
 };
 
-export default singleCollege;
+export default SingleCollege;
